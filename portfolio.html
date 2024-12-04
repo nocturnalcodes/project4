@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Portfolio, Writing Samples, Freelance Writer Portfolio, Gaming Blog Writer">
+<meta name="description" content="The Portfolio shows reflects my most recent writing samples so clients can see the kind of content I create.">
+<meta name="copyright" content="Copyright © 2024 Mariyah Jade Writes">
+<meta name="author" content="Mariyah Braggs">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="icon" type="image/x-icon" href="images/favicon_io/favicon-16x16.png">
+<title>Mariyah Jade Writes - Portfolio</title>
+</head>
+
+<body>
+    <div id="navlist">
+        <div class="logo">Mariyah Jade Writes</div>
+        <a href="project4.html">Home</a>
+        <a href="aboutme.html">About</a>
+        <a href="rates.html">Rates</a>
+        <ul class="nav-list">
+            <li class="dropdown">
+            <a href="portfolio.html">Portfolio</a>
+            <ul class="dropdown-content">
+                <li><a href="sample1.html">Sample 1</a></li>
+                <li><a href="sample2.html">Sample 2</a></li>
+                <li><a href="sample3.html">Sample 3</a></li>
+                <li><a href="sample4.html">Sample 4</a></li>
+            </ul>
+        </li>
+        </ul>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contactme.html">Contact Me</a>
+
+        <!-- search bar right align -->
+        <div class="search">
+            <form action="https://duckduckgo.com/" method="get" target="_blank">
+                <input type="hidden" name="sites" value="yourwebsite.com">
+                <input type="text" name="q" placeholder="Search" class="search-input">
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <h1 class="title">Portfolio</h1>
+
+    <h3 class="title">Hover over and click each title to view the writing samples!</h3>
+
+    <main class="portfolio-section">
+        <div class="portfolio-grid">
+            <div class="portfolio-tile">
+                <a href="sample1.pdf" target="_blank" class="thumbnail-link">
+                    <img src="images/hero.png" alt="Sample 1 thumbnail" class="thumbnail-image">
+                    <div class="overlay">
+                        <span class="hover-text">Sample 1</span>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-tile">
+                <a href="sample2.pdf" target="_blank" class="thumbnail-link">
+                    <img src="images/hero.png" alt="Sample 2 thumbnail" class="thumbnail-image">
+                    <div class="overlay">
+                        <span class="hover-text">Sample 2</span>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-tile">
+                <a href="sample3.pdf" target="_blank" class="thumbnail-link">
+                    <img src="images/hero.png" alt="Sample 3 thumbnail" class="thumbnail-image">
+                    <div class="overlay">
+                        <span class="hover-text">Sample 3</span>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-tile">
+                <a href="sample4.pdf" target="_blank" class="thumbnail-link">
+                    <img src="images/hero.png" alt="Sample 4 thumbnail" class="thumbnail-image">
+                    <div class="overlay">
+                        <span class="hover-text">Sample 4</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>    
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById('datetime').textContent = now.toLocaleString();
+        }
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+    
+    <footer>
+        <div id="datetime"></div>
+        <p>&copy; 2024 Mariyah Jade Writes. All rights reserved. | <a href="privacypolicy.html">Privacy Policy</a></p>
+    </footer>   
+    </body>
+    </html>

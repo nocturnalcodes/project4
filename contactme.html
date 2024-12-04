@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Contact, LinkedIn URL, Fillable Form">
+<meta name="description" content="The contact page provides users methods to contact me if they would like to conduct business with me">
+<meta name="copyright" content="Copyright © 2024 Mariyah Jade Writes">
+<meta name="author" content="Mariyah Braggs">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="images/favicon_io/favicon-16x16.png">
+<link rel="stylesheet" href="css/all.min.css">
+<title>Mariyah Jade Writes - Contact Me</title>
+</head>
+
+<body>
+    <div id="navlist">
+        <div class="logo">Mariyah Jade Writes</div>
+        <a href="project4.html">Home</a>
+        <a href="aboutme.html">About</a>
+        <a href="rates.html">Rates</a>
+        <ul class="nav-list">
+            <li class="dropdown">
+            <a href="portfolio.html">Portfolio</a>
+            <ul class="dropdown-content">
+                <li><a href="sample1.html">Sample 1</a></li>
+                <li><a href="sample2.html">Sample 2</a></li>
+                <li><a href="sample3.html">Sample 3</a></li>
+                <li><a href="sample4.html">Sample 4</a></li>
+            </ul>
+        </li>
+        </ul>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contactme.html">Contact Me</a>
+
+        <!-- search bar right align -->
+        <div class="search">
+            <form action="https://duckduckgo.com/" method="get" target="_blank">
+                <input type="hidden" name="sites" value="yourwebsite.com">
+                <input type="text" name="q" placeholder="Search" class="search-input">
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <h1 class="title">Ready to take your gaming blog content to the next level? Let's work together!</h1>
+    <main class="contact-section">
+        <form action="mailto:mjwrites@gmail.com" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Contact Information</legend>
+                
+                <div class="form-group">
+                    <label for="name"><i class="fa-solid fa-user"></i> Name: *</label>
+                    <input type="text" id="name" name="name" required tabindex="1" placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email"><i class="fa-solid fa-envelope"></i> Email: *</label>
+                    <input type="email" id="email" name="email" required tabindex="2" placeholder="example@domain.com">
+                </div>
+    
+                <div class="form-group">
+                    <label for="subject"><i class="fa-solid fa-tag"></i> Subject:</label>
+                    <select id="subject" name="subject" tabindex="3">
+                        <option value="">Select a topic</option>
+                        <option value="gaming">Gaming Content</option>
+                        <option value="blog">Blog Writing</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Project Details</legend>
+                
+                <div class="form-group">
+                    <label>Preferred Contact Method:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="email-contact" name="contact" value="email" tabindex="4">
+                        <label for="email-contact">Email</label>
+                        
+                        <input type="radio" id="phone-contact" name="contact" value="phone" tabindex="5">
+                        <label for="phone-contact">Phone</label>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label>Services Needed:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="blog-writing" name="services" value="blog" tabindex="6">
+                        <label for="blog-writing">Blog Writing</label>
+                        
+                        <input type="checkbox" id="game-reviews" name="services" value="reviews" tabindex="7">
+                        <label for="game-reviews">Game Reviews</label>
+                        
+                        <input type="checkbox" id="content-editing" name="services" value="editing" tabindex="8">
+                        <label for="content-editing">Content Editing</label>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message"><i class="fa-solid fa-message"></i> Message:</label>
+                    <textarea id="message" name="message" rows="5" tabindex="9" placeholder="Tell me about your project"></textarea>
+                </div>
+            </fieldset>
+    
+            <button type="submit" class="submit-btn" tabindex="10">Send Message</button>
+        </form>
+    </main>    
+    
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById('datetime').textContent = now.toLocaleString();
+        }
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    
+        // validate the form
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name.length < 2) {
+                alert('Please enter a valid name');
+                return;
+            }
+            
+            if (!email.includes('@') || !email.includes('.')) {
+                alert('Please enter a valid email address');
+                return;
+            }
+            
+            if (message.length < 10) {
+                alert('Message must be at least 10 characters long');
+                return;
+            }
+            
+            this.submit();
+        });
+    </script>
+    
+    <footer>
+        <div id="datetime"></div>
+        <p>&copy; 2024 Mariyah Jade Writes. All rights reserved. | <a href="privacypolicy.html">Privacy Policy</a></p>
+    </footer>     
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Testimonials, Target Audience, Gaming Industry, Business Promotion">
+<meta name="description" content="The Testimonials page focuses on establishing social credibility by providing a few testimonials from past clients that I worked with">
+<meta name="copyright" content="Copyright © 2024 Mariyah Jade Writes">
+<meta name="author" content="Mariyah Braggs">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="icon" type="image/x-icon" href="images/favicon_io/favicon-16x16.png">
+<title>Mariyah Jade Writes - Testimonials</title>
+</head>
+
+<body>
+    <div id="navlist">
+        <div class="logo">Mariyah Jade Writes</div>
+        <a href="project4.html">Home</a>
+        <a href="aboutme.html">About</a>
+        <a href="rates.html">Rates</a>
+        <ul class="nav-list">
+            <li class="dropdown">
+            <a href="portfolio.html">Portfolio</a>
+            <ul class="dropdown-content">
+                <li><a href="sample1.html">Sample 1</a></li>
+                <li><a href="sample2.html">Sample 2</a></li>
+                <li><a href="sample3.html">Sample 3</a></li>
+                <li><a href="sample4.html">Sample 4</a></li>
+            </ul>
+        </li>
+        </ul>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contactme.html">Contact Me</a>
+
+        <!-- search bar right align -->
+        <div class="search">
+            <form action="https://duckduckgo.com/" method="get" target="_blank">
+                <input type="hidden" name="sites" value="yourwebsite.com">
+                <input type="text" name="q" placeholder="Search" class="search-input">
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <h1 class="title">Testimonials</h1>
+
+    <div class="tests">
+        <h3>'Mariyah's blog posts have completely transformed our gaming site. Her deep understanding of gaming trends and ability to engage readers is unmatched. Our traffic has nearly doubled since we started working with her. Highly recommend her services!'</h3>
+        <h4>Alex Carter, Content Manager, Next Level Gaming</h4>
+    </div>
+
+    <div class="tests">
+        <h3>'We needed someone who could capture the excitement of gaming while breaking down complex topics for our audience. Mariyah delivered beyond our expectations with every blog post. She truly knows how to speak to gamers!'</h3>
+        <h4>Jordan Lee, Founder, Pixelated Games Inc.</h4>
+    </div>
+
+    <div class="tests">
+        <h3>'Mariyah’s writing is always on point. From eSports trends to indie game reviews, her posts consistently resonate with our audience. She’s reliable, creative, and always meets deadlines. She’s been an invaluable part of our content strategy.'</h3>
+        <h4>Taylor Morgan, Co-Founder, StarGames Interactive Weekly.</h4>
+    </div>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById('datetime').textContent = now.toLocaleString();
+        }
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+    
+    <footer>
+        <div id="datetime"></div>
+        <p>&copy; 2024 Mariyah Jade Writes. All rights reserved. | <a href="privacypolicy.html">Privacy Policy</a></p>
+    </footer>       
+</body>
+</html>

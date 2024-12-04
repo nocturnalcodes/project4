@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Sample 1, PS4 exclusives, Sony">
+<meta name="description" content="Sample 1 page focuses showing a writing sample.">
+<meta name="copyright" content="Copyright © 2024 Mariyah Jade Writes">
+<meta name="author" content="Mariyah Braggs">
+<meta name="robots" content="noindex, follow">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="images/favicon_io/favicon-16x16.png">
+<title>Mariyah Jade Writes - Home</title>
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div id="navlist">
+        <div class="logo">Mariyah Jade Writes</div>
+        <a href="project4.html">Home</a>
+        <a href="aboutme.html">About</a>
+        <a href="rates.html">Rates</a>
+        <ul class="nav-list">
+            <li class="dropdown">
+            <a href="portfolio.html">Portfolio</a>
+            <ul class="dropdown-content">
+                <li><a href="sample1.html">Sample 1</a></li>
+                <li><a href="sample2.html">Sample 2</a></li>
+                <li><a href="sample3.html">Sample 3</a></li>
+                <li><a href="sample4.html">Sample 4</a></li>
+            </ul>
+        </li>
+        </ul>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contactme.html">Contact Me</a>
+
+        <!-- search bar right align -->
+        <div class="search">
+            <form action="https://duckduckgo.com/" method="get" target="_blank">
+                <input type="hidden" name="sites" value="yourwebsite.com">
+                <input type="text" name="q" placeholder="Search" class="search-input">
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Mariyah Braggs, Content Writer</h1>
+            <h3>I create engaging and informative blog content about the latest gaming relases and industry insights to help drive traffic to your blog.</h3>
+        </div>
+    </div>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById('datetime').textContent = now.toLocaleString();
+        }
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+    
+    <footer>
+        <div id="datetime"></div>
+        <p>&copy; 2024 Mariyah Jade Writes. All rights reserved. | <a href="privacypolicy.html">Privacy Policy</a></p>
+    </footer>  
+</body>
+
+</html>
